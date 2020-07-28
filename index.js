@@ -23,7 +23,15 @@ const promptUser = () => {
     {
     type: 'input',
     name: 'title',
-    message: 'What is the title of your project?'
+    message: 'What is the title of your project?',
+    validate: titleInput => {
+        if (titleInput) {
+            return true;
+        } else {
+            console.log('Please enter the name of your project.')
+            return false;
+        }
+    }
     },
     {
         type: 'confirm',
@@ -34,7 +42,14 @@ const promptUser = () => {
     {
         type: 'input',
         name: 'description',
-        message: 'Please describe your project:'
+        message: 'Please describe your project:',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please describe your project.')
+            }
+        }
     },
     {
         type: 'input',
