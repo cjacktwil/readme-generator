@@ -60,7 +60,7 @@ const promptUser = () => {
 {
     type: 'confirm',
     name: 'screenshotConfirmTwo',
-    message: 'Would you like ot include another screenshot?',
+    message: 'Would you like to include another screenshot?',
     default: false
 },
 {
@@ -75,13 +75,14 @@ message: 'Who worked on this project and needs to be listed in the credit sectio
 },
 {
     type: 'input',
-    name: 'credit',
+    name: 'license',
     message: 'What license does this project hold?'
 },
 {
     type: 'confirm',
     name: 'badgesConfirm',
-    message: 'Would you like to list any badges?'
+    message: 'Would you like to list any badges?',
+    default: false
 },
 {
     type: 'input',
@@ -91,7 +92,24 @@ message: 'Who worked on this project and needs to be listed in the credit sectio
 {
     type: 'confirm',
     name:'contributingConfirm',
-    message: 'Would you like to list any contributors?'
+    message: 'Would you like others to contribute to this project?',
+    default: false
+},
+{
+    type: 'input',
+    name: 'contribute',
+    message: 'How can others contribute to this project?'
+},
+{
+    type: 'confirm',
+    name: 'testConfirm',
+    message: 'Would you like to provide any test examples for your project?',
+    default: false
+},
+{
+    type: 'input',
+    name: 'test',
+    message: 'Please provide test examples for this project.'
 }
 ])
 };
