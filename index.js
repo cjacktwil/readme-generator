@@ -19,11 +19,37 @@ const questions = [
         }
         },
         {
-            type: 'confirm',
-            name: 'table',
-            message: 'Would you like to add a table of contents?',
-            default: false
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email.')
+                    return false;
+                }
+            }
         },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Please enter your GitHub username.',
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username.')
+                    return false;
+                }
+            }
+        },
+        // {
+        //     type: 'confirm',
+        //     name: 'table',
+        //     message: 'Would you like to add a table of contents?',
+        //     default: false
+        // },
         {
             type: 'input',
             name: 'description',
@@ -39,12 +65,28 @@ const questions = [
         {
             type: 'input',
             name: 'installation',
-            message: 'How does one install your project?'
+            message: 'How does one install your project?',
+            validate: installationInput => {
+                if (installationInput) {
+                    return true;
+                } else {
+                    console.log('Please answer the question.')
+                    return false;
+                }
+            }
         },
     {
         type: 'input',
         name: 'usage',
-        message: 'How is this application used?'
+        message: 'How is this application used?',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            } else {
+                console.log('Please answer the question.')
+                return false;
+            }
+        }
     },
     {
         type: 'confirm',
@@ -64,56 +106,56 @@ const questions = [
         message: 'Enter the alternate text for our screenshot link.',
         when: ({screenshotConfirm}) => screenshotConfirm
     },
-    {
-    type: 'input',
-    name: 'credits',
-    message: 'Who worked on this project and needs to be listed in the credit section?'
-    },
-    {
-        type: 'input',
-        name: 'creditLink',
-        message: 'Please enter the GitHub link for your collaborator.'
-    },
+    // {
+    // type: 'input',
+    // name: 'credits',
+    // message: 'Who worked on this project and needs to be listed in the credit section?'
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'creditLink',
+    //     message: 'Please enter the GitHub link for your collaborator.'
+    // },
     {
         type: 'input',
         name: 'license',
         message: 'What license does this project hold?'
     },
-    {
-        type: 'confirm',
-        name: 'badgesConfirm',
-        message: 'Would you like to list any badges?',
-        default: false
-    },
-    {
-        type: 'input',
-        name: 'badges',
-        message: 'What badges would you like to add?',
-        when: ({badgesConfirm}) => badgesConfirm
-    },
-    {
-        type: 'confirm',
-        name:'contributingConfirm',
-        message: 'Would you like others to contribute to this project?',
-        default: false
-    },
+    // {
+    //     type: 'confirm',
+    //     name: 'badgesConfirm',
+    //     message: 'Would you like to list any badges?',
+    //     default: false
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'badges',
+    //     message: 'What badges would you like to add?',
+    //     when: ({badgesConfirm}) => badgesConfirm
+    // },
+    // {
+    //     type: 'confirm',
+    //     name:'contributingConfirm',
+    //     message: 'Would you like others to contribute to this project?',
+    //     default: false
+    // },
     {
         type: 'input',
         name: 'contribute',
         message: 'How can others contribute to this project?',
-        when: ({contributingConfirm}) => contributingConfirm
-    },
-    {
-        type: 'confirm',
-        name: 'testConfirm',
-        message: 'Would you like to provide any test examples for your project?',
-        default: false
+        validate: contributeInput => {
+            if (contributeInput) {
+                return true;
+            } else {
+                console.log('Please answer the question')
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'test',
         message: 'Please provide test examples for this project.',
-        when: ({testConfirm}) => testConfirm
     }
 
 ];

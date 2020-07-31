@@ -1,5 +1,3 @@
-// const generateTable =
-
 
 const generateScreenshot = (data) => {
   if (!data.screenshotConfirm) {
@@ -24,7 +22,14 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ## Description
   ${data.description}
-  // ## Table of Contents - optional - ask question about if user wants to include, then create functions to add, if true
+  
+  ## Table of Contents
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[License](#license)
+  *[Contribution Guidelines](#contributing)
+  *[Tests](#tests)
+  *[Questions](#questions)
  
   ## Installation
   ${data.installation}
@@ -33,13 +38,17 @@ function generateMarkdown(data) {
   ${data.usage}
   ${generateScreenshot(data)}
 
-  ## Credits
-  ${data.credits}
   ## License
-  ${data.license}
-  //## Badges - optional
-  //## Contributing - optional
-  //## Tests - optional
+ 
+
+  ## Contributing
+  ${data.contribute}
+
+  ## Tests
+  ${data.test}
+
+  ## Questions
+  Have additional questions? Contact [${data.github}](http://github.com.${data.github}) or email ${data.email}.
 `;
 }
 
