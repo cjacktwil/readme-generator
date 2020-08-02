@@ -24,7 +24,7 @@ Answer each question. An 'editor' option is provided for questions (like this on
 Once all questions have been answered, the app will generate a file in the 'dist' folder in markdown to use as your README.
 
 
-![Application screenshot](../assets/screenshot.jpg)
+![Application screenshot](./assets/screenshot.jpg)
 
 ## License
 This project is licensed under a Apache License 2.0 license. 
