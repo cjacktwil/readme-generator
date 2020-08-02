@@ -14,7 +14,7 @@ const generateScreenshot = (data) => {
     } screenshotAlt = data.alt;
     // console.log(screenshotAlt);
   };
-  return `![${screenshotAlt}](${screenshotUrl})`;
+  return `![${screenshotAlt}](.${screenshotUrl})`;
 };
 
 //function to generate badge
