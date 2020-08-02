@@ -28,7 +28,7 @@ Once all questions have been answered, the app will generate a file in the 'dist
 
 
 ![Application screenshot](./assets/screenshot.jpg)
-![[Application walkthrough video]({./assets/videoScreenshot.jpg})]({https://drive.google.com/file/d/1vtDUL6o1uN_6SgPMLWvTs9Zq-D90u-_m/view} "Application walkthrough video")
+![[Application walkthrough video](./assets/videoScreenshot.jpg)](https://drive.google.com/file/d/1vtDUL6o1uN_6SgPMLWvTs9Zq-D90u-_m/view)
 
 ## License
 This project is licensed under a Apache License 2.0 license. 
