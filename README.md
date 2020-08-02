@@ -29,7 +29,7 @@ Once all questions have been answered, the app will generate a file in the 'dist
 
 ![Application screenshot](./assets/screenshot.jpg)
 
-![Application demonstration](https://youtu.be/FWdyY99hR_g)
+![[Application demonstration](./assets/videoScreenshot.jpg)](https://youtu.be/FWdyY99hR_g)
 
 ## License
 This project is licensed under a Apache License 2.0 license. 
