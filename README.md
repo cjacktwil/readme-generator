@@ -1,6 +1,6 @@
 
 # README Generator
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 A quality README is essential to any project. However, the time that it takes to create a quality README can distract from the time needed to complete a quality project.
@@ -29,11 +29,10 @@ Once all questions have been answered, the app will generate a file in the 'dist
 
 ![Application screenshot](./assets/screenshot.jpg)
 
-[![Application demonstration](./assets/videoScreenshot.jpg)](https://drive.google.com/file/d/1vtDUL6o1uN_6SgPMLWvTs9Zq-D90u-_m/view "Application demonstration")
-[Application demonstration](https://youtu.be/FWdyY99hR_g)
+[![Application demonstration](./assets/videoScreenshot.jpg)](https://drive.google.com/file/d/1vtDUL6o1uN_6SgPMLWvTs9Zq-D90u-_m/view "Application demonstration"){:target="_blank"}
 
 ## License
-This project is licensed under a Apache License 2.0 license. 
+This project is licensed under an MIT license. 
 
 ## Contributing
 Clone the repo, then run npm install. Once contribution is completed, initiate a pull request through GitHub.
