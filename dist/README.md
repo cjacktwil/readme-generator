@@ -1,6 +1,6 @@
 
-# README Generator
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Readme Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 A quality README is essential to any project. However, the time that it takes to create a quality README can distract from the time needed to complete a quality project.
@@ -16,7 +16,7 @@ The README Generator creates a quality README through command line prompts to ef
 * [Questions](#questions)
  
 ## Installation
-Run npm install.
+Run NPM install.
 
 ## Usage
 Once the application is installed, the user initiates it by typing 'node index' in the command line of the root directory of the project terminal.
@@ -27,7 +27,7 @@ Once all questions have been answered, the app will generate a file in the 'dist
 ![Application screenshot](../assets/screenshot.jpg)
 
 ## License
-This project is licensed under a Apache License 2.0 license. 
+This project is licensed under a MIT license. 
 
 ## Contributing
 Clone the repo, then run npm install. Once contribution is completed, initiate a pull request through GitHub.
